@@ -2,11 +2,15 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            url 'https://maven.fabric.io/public' // Firebase Crashlytics
+        }
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
-        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'com.google.gms:google-services:4.3.3' // Firebase Core
+        classpath 'io.fabric.tools:gradle:1.26.1' // Firebase Crashlytics
     }
 }
 
@@ -14,6 +18,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url 'https://maven.fabric.io/public' // Firebase Crashlytics
+        }
     }
 }
 
